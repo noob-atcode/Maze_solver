@@ -10,7 +10,7 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 		<title>Maze solver</title>
-		<link rel="shortcut icon" type="image/png" href="resources/images/Favicon.png"/>
+		<link rel="shortcut icon" type="image/png" href="resources/images/favicon.png"/>
 
 		<link rel="stylesheet" type="text/css" href="css/menu.css"/>
 		<link rel="stylesheet" type="text/css" href="css/grid.css"/>
@@ -18,6 +18,7 @@
 
 		<script type="text/javascript" src="js/properties.js"></script>
 		<script type="text/javascript" src="js/maze_generators.js"></script>
+		<script type="text/javascript" src="js/maze_solvers.js"></script>
 		<script type="text/javascript" src="js/menu.js"></script>
 		<script type="text/javascript" src="js/visualizer.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
@@ -31,7 +32,19 @@
 
 			<br><br>
 
-			
+			<div class="choice" id="choice_1">
+				<span class="choice_label" id="choice_label_1">Maze solving algorithm</span>
+				<label class="select" for="slct_1">
+					<select id="slct_1" required="required">
+						<option selected value="1">Breadth-First</option>
+						<option value="5">A*</option>
+					</select>
+					<svg>
+						<use xlink:href="#select-arrow-down"></use>
+					</svg>
+				</label>
+			</div>
+
 			<div class="choice" id="choice_2">
 				<span class="choice_label" id="choice_label_2">Maze generation algorithm</span>
 				<label class="select" for="slct_2">
@@ -39,7 +52,7 @@
 						<option hidden selected value="0">Custom</option>
 						
 						<option value="2">Kruskal's Algorithm</option>
-						
+						<option value="3">Prim's Algorithm</option>
 						
 					</select>
 					<svg>

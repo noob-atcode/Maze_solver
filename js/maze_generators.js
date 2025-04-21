@@ -46,8 +46,6 @@ function enclose()
 	}
 }
 
-
-
 function kruskal_algorithm()
 {
 	fill_walls();
@@ -225,8 +223,7 @@ function maze_generators()
 
 	grid_clean = false;
 
-	
-	 if (document.querySelector("#slct_2").value == "2")
+	if (document.querySelector("#slct_2").value == "2")
 		kruskal_algorithm();
 
 	else if (document.querySelector("#slct_2").value == "3")
